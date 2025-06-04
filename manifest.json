@@ -1,6 +1,6 @@
 {
 	"id": "url-mention-converter",
-	"name": "URL Mention Converter",
+	"name": "url-mention",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Convert URL to mention",
