@@ -6,11 +6,11 @@ cd ~/Documents/Obsidian/vault/.obsidian/plugins
 ```
 
 ```
-git clone https://github.com/ysyoon5716/obsidian-url-mention-converter.git
+git clone https://github.com/ysyoon5716/obsidian-url-converter.git
 ```
 
 ```
-cd obsidian-url-mention-converter
+cd obsidian-url-converter
 ```
 ```
 npm i cheerio
