@@ -1,9 +1,9 @@
 {
-	"id": "url-mention-converter",
-	"name": "url-mention",
+	"id": "obsidian-url",
+	"name": "Obsidian URL",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Convert URL to mention",
+	"description": "Convert URL to mention in Obsidian",
 	"author": "ysyoon",
 	"authorUrl": "ysyoon5716@gmail.com",
 	"fundingUrl": "",

@@ -36,12 +36,12 @@ export default class MyPlugin extends Plugin {
 		if (url?.startsWith('http')) {
 			const res = await requestUrl({ url: url, method: 'GET' });
 			const $ = cheerio.load(res.text);
-			const title = $('title').text();
+			const title = $('title').text().replace('[', '(').replace(']', ')');
 			const cursor = editor.getCursor();
 			const from = { line: cursor.line, ch: cursor.ch - url.length };
 			const to = { line: cursor.line, ch: cursor.ch };
-			// editor.replaceRange(`[${title}](${url})`, from, to);
-			editor.replaceRange(`<a href="${url}">${title}</a>`, from, to);
+			editor.replaceRange(`[${title}](${url})`, from, to);
+			// editor.replaceRange(`<a href="${url}">${title}</a>`, from, to);
 		}
 	}
 }
